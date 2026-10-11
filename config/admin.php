@@ -12,18 +12,14 @@ return [
     |
     */
 
-    'admin' => [
+    'email' => env('ADMIN_EMAIL'),
 
-        'email' => env('ADMIN_EMAIL'),
+    'password' => env('ADMIN_PASSWORD'),
 
-        'password' => env('ADMIN_PASSWORD'),
+    'name' => env('ADMIN_NAME', 'Administrador'),
 
-        'name' => env('ADMIN_NAME', 'Administrador'),
+    'last_name' => env('ADMIN_LAST_NAME', 'Sistema'),
 
-        'last_name' => env('ADMIN_LAST_NAME', 'Sistema'),
-
-        'document_number' => env('ADMIN_DOCUMENT_NUMBER'),
-
-    ],
+    'document_number' => env('ADMIN_DOCUMENT_NUMBER'),
 
 ];
